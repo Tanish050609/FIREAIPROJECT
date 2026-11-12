@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b1120;
+    color: #e5edf7;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background: #111c30;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #24344d;
+}
+
+header h1 {
+    color: #27d9e8;
+    font-size: 28px;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+.mode {
+    color: #fbbf24;
+    border: 1px solid #8a651b;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.overview {
+    margin-bottom: 25px;
+}
+
+.overview h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.overview p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4ade80;
+    background: #123323;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.sensor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.sensor {
+    background: #142137;
+    border: 1px solid #263952;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.sensor p {
+    color: #a9b9ce;
+    font-size: 14px;
+}
+
+.sensor h2 {
+    color: #27d9e8;
+    font-size: 32px;
+    margin: 18px 0 10px;
+}
+
+.sensor small {
+    color: #8496ae;
+}
+
+.system, .events {
+    margin-top: 25px;
+    padding: 24px;
+    background: #142137;
+    border: 1px solid #263952;
+    border-radius: 12px;
+}
+
+.system h2, .events h2 {
+    margin-bottom: 18px;
+}
+
+.system-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #263952;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.system-row strong {
+    color: #4ade80;
+    font-size: 12px;
+}
+
+.events p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 11px;
+    padding: 35px 10px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+@media (max-width: 550px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .sensor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 22px 14px;
+    }
+
+    .sensor h2 {
+        font-size: 28px;
+    }
+}

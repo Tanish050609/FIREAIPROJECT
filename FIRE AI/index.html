@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE AI | Command Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>🔥 FIRE AI</h1>
+        <p>Autonomous Disaster Detection & Response</p>
+    </div>
+    <span class="mode">SIMULATION MODE</span>
+</header>
+
+<main>
+    <section class="overview">
+        <h2>Smart House Monitoring</h2>
+        <p>House 01 · ESP32 Sensor Network</p>
+        <span class="status" id="houseStatus">● NORMAL</span>
+    </section>
+
+    <section class="sensor-grid">
+
+        <article class="sensor">
+            <p>🌡️ Temperature</p>
+            <h2 id="temperature">-- °C</h2>
+            <small>DHT11 Sensor</small>
+        </article>
+
+        <article class="sensor">
+            <p>💧 Humidity</p>
+            <h2 id="humidity">-- %</h2>
+            <small>DHT11 Sensor</small>
+        </article>
+
+        <article class="sensor">
+            <p>☁️ Gas Level</p>
+            <h2 id="gas">--</h2>
+            <small>MQ-2 Sensor · Raw demo value</small>
+        </article>
+
+        <article class="sensor">
+            <p>🔥 Flame Detection</p>
+            <h2 id="flame">NORMAL</h2>
+            <small>Flame Sensor</small>
+        </article>
+
+    </section>
+
+    <section class="system">
+        <h2>System Status</h2>
+
+        <div class="system-row">
+            <span>House Node</span>
+            <strong id="espStatus">SIMULATED</strong>
+        </div>
+
+        <div class="system-row">
+            <span>Rover</span>
+            <strong>STANDBY</strong>
+        </div>
+
+        <div class="system-row">
+            <span>Dashboard</span>
+            <strong>ONLINE</strong>
+        </div>
+    </section>
+
+    <section class="events">
+        <h2>Activity Log</h2>
+        <p id="activity">Waiting for simulated sensor updates...</p>
+    </section>
+
+    <footer>
+        FIRE AI PROJECT · DEMONSTRATION VERSION
+        <p>All readings are simulated, not live sensor measurements.</p>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
